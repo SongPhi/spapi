@@ -1,7 +1,5 @@
-module.exports = SPAPI;
-
-class SPAPI {
-    hello() {
+module.exports = function() {
+    this.hello = function() {
         console.log('hello world');
     }
 }
