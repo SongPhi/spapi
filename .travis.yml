@@ -8,7 +8,7 @@ node_js:
 
 cache:
   directories:
-     - ./node_modules
+    - ./node_modules
 
 deploy:
   - provider: npm
@@ -17,7 +17,7 @@ deploy:
     tag: dev
     on:
       branch: "master"
-- provider: npm
+  - provider: npm
     email: "thaolt@songphi.com"
     api_key: $NPMAUTHTOKEN
     tag: latest

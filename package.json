@@ -11,5 +11,8 @@
   },
   "scripts": {
     "test": "echo 'No test defined!'"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
