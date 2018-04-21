@@ -1,4 +1,9 @@
 language: node_js
 node_js:
   - "8"
-script: yarn deploy:dev
+deploy:
+  provider: npm
+  email: "thaolt@songphi.com"
+  api_key: $NPMAUTHTOKEN
+  on:
+    all_branches: true
