@@ -1,9 +1,25 @@
+dist: trusty
+sudo: false
+
 language: node_js
+
 node_js:
   - "8"
+
+cache:
+  directories:
+     - ./node_modules
+
 deploy:
-  provider: npm
-  email: "thaolt@songphi.com"
-  api_key: $NPMAUTHTOKEN
-  on:
-    all_branches: true
+  - provider: npm
+    email: "thaolt@songphi.com"
+    api_key: $NPMAUTHTOKEN
+    tag: dev
+    on:
+      branch: "master"
+- provider: npm
+    email: "thaolt@songphi.com"
+    api_key: $NPMAUTHTOKEN
+    tag: latest
+    on:
+      tags: true
