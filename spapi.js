@@ -1,4 +1,4 @@
-export default SPAPI;
+module.exports = SPAPI;
 
 class SPAPI {
     hello() {
