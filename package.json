@@ -5,5 +5,11 @@
   "main": "spapi.js",
   "repository": "https://github.com/SongPhi/spapi",
   "author": "Thao Le <thaolt@songphi.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "swagger-ui-watcher": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo 'No test defined!'"
+  }
 }
